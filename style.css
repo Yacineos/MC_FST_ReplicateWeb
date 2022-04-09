@@ -1,3 +1,31 @@
-h1{
-    color:red;
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&display=swap');
+*{
+    margin: 0;
+    font-family: 'Barlow',sans-serif;
+}
+.main-nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.nav-logo{
+    width: 8em;
+    height: auto;
+}
+.main-nav-elements{
+    display: flex;
+    height: auto;
+    list-style: none;
+}
+.main-nav-elements > li {
+    margin : 2em 0.4em 1em 0.4em ;
+    padding: 0.2em;
+}
+.hover-menu{
+    list-style: none;
+    
+}
+a {
+    text-decoration: none;
 }
