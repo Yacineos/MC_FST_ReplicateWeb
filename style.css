@@ -12,6 +12,8 @@
 }
 
 *{
+    background-color: var(--background);
+    box-sizing: border-box;
     margin: 0;
     font-family: var(--main-font);
 }
@@ -20,11 +22,12 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-  
+    padding: 0 4%;
 }
 .nav-logo{
-    width: 8em;
+    width: 6em;
     height: auto;
+    margin: 1em 1em;
 }
 .main-nav-elements{
     display: flex;
@@ -32,6 +35,7 @@
     list-style: none;
     font-family: var(--secondary-font)!important;
     color: var(--light);
+    text-transform: uppercase;
 }
 .main-nav-elements > li {
     margin : 2em 0.4em 1em 0.4em ;
@@ -58,4 +62,21 @@ a {
 }
 #Home h1{
     font-size: 7em;
+}
+.main-nav button {
+    background-color: var(--primary);
+
+}
+.main-nav button:hover{
+    background-color: var(--background);
+    color: var(--primary);
+}
+.hover-menu{
+    visibility: ;
+    position: absolute;
+    left: 0;
+    top: 2em;
+}
+.menu-holder{
+    position: relative;
 }
