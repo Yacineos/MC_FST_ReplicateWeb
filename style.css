@@ -72,11 +72,14 @@ a {
     color: var(--primary);
 }
 .hover-menu{
-    visibility: ;
+    visibility: hidden;
     position: absolute;
     left: 0;
     top: 2em;
 }
 .menu-holder{
     position: relative;
+}
+.menu-holder:hover .hover-menu{
+    visibility: visible;
 }
