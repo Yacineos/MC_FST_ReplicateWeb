@@ -16,6 +16,7 @@
     box-sizing: border-box;
     margin: 0;
     font-family: var(--main-font);
+    color: var(--light);
 }
 .main-nav{
     display: flex;
@@ -23,6 +24,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     padding: 0 4%;
+    align-items: center;
 }
 .nav-logo{
     width: 6em;
@@ -36,10 +38,12 @@
     font-family: var(--secondary-font)!important;
     color: var(--light);
     text-transform: uppercase;
+    align-items: center;
+    padding: 0 2em;
 }
 .main-nav-elements > li {
-    margin : 2em 0.4em 1em 0.4em ;
-    padding: 0.2em;
+    
+    padding: 2em 0.5em;
 }
 .hover-menu{
     list-style: none;
@@ -65,11 +69,18 @@ a {
 }
 .main-nav button {
     background-color: var(--primary);
+    align-items: center;
+    height: 3.5em;
+    border: 1px solid var(--primary);
+    width: 18em;
+    text-transform: uppercase;
+    color: var(--dark);
 
 }
 .main-nav button:hover{
     background-color: var(--background);
     color: var(--primary);
+    cursor: pointer;
 }
 .hover-menu{
     visibility: hidden;
@@ -82,4 +93,24 @@ a {
 }
 .menu-holder:hover .hover-menu{
     visibility: visible;
+}
+
+#Home h1{
+    color: var(--light);
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: 5.3em;
+    width: 8.4ch;
+    max-width: 100%;
+}
+.h1-modified{
+    color: var(--primary);
+}
+
+.info h4{
+    color: var(--secondary);
+    text-align: right;
+}
+.info a{
+    text-align: right;
 }
