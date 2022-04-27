@@ -176,6 +176,7 @@ p{
     z-index: 1;
     justify-content: center;
 }
+
 #Home .info{
     display: flex;
     flex-direction: column;
@@ -186,6 +187,7 @@ p{
 #Home .info a{
     margin-bottom: 0.5em;
 }
+
 /*------------About ----------*/
 #About {
     flex-direction: row;
@@ -215,10 +217,10 @@ p{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2.5em;
 }
 .speaker{
     padding: 0 0.5em;
+    width: 33%;
 }
 .speaker-visual{
     position: relative;
@@ -257,8 +259,12 @@ p{
 .speaker-visual:hover .speaker-socials .speaker-social{
     transform: translateY(0);
 }
+.speaker-visual {
+    width: 100%;
+}
 .speaker-visual > img{
     transition: transform 300ms ease-out;
+    width: 100%;
 }
 .speaker-visual:hover > img{
     transform: scale(1.1);
@@ -281,8 +287,16 @@ top: 35%;
 .speakers.speakers .owl-nav button{
     font-size: 5em;
 }
+.owl-carousel{
+    display: flex;
+    flex-wrap: wrap;
+}
+.speakers{
+    margin-top: 2em;
+}
 .h1-modified{
     font-family: inherit;
+    margin-top: 10em;
 }
 .nav-button-image{
     width: 1em;
