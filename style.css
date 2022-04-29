@@ -277,6 +277,10 @@ p {
 
 
 /*--------------------Speakers ------------*/
+.swiper {
+    width: 100%;
+    height: auto;
+  }
 
 #Speakers .top-div {
     width: 100%;

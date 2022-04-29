@@ -1,3 +1,16 @@
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView:5,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
 function random (id,max){
     var cpt = 0 ;
     var speed = 0.5
@@ -59,6 +72,7 @@ function navTable3(){
     elem3.color="#ffbd00";
    
 }
+
 
 random("about-counters__first-h3",20);
 random("about-counters__second-h3",80);
