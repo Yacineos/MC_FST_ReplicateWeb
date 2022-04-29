@@ -415,18 +415,31 @@ p {
     background-color: var(--scheduleBackground);
     padding: 2em;
     border-radius: 1em;
+    font-family: var(--secondary-font);
 }
 
 .schedule-content-element {
     padding: 2em 0;
-    border-bottom: 1px dashed var(--textColor);
+    border-bottom: 1px dashed white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
 }
 
 .schedule-nav {
     border-bottom: 1px solid var(--light);
     display: flex;
     justify-content: center;
+    font-size: 1.6em;
+    
 }
+
+.schedule-nav > a {
+    padding: 0.5em 1em;
+    color: var(--light);
+    font-weight: 500;
+}
+
 
 .schedule-element {
     font-size: 1.2em;
@@ -436,6 +449,20 @@ p {
     padding-bottom: 1em;
 }
 
-.show {
-    color: yellow;
+
+
+.schedule-time-content > ul{
+    list-style: none;
+    font-size: 0.7em;
+}
+.schedule-day{
+    visibility: hidden;
+    margin: 0;
+    opacity: 0;
+    height: 0;
+}
+.schedule-day.show{
+    visibility: visible;
+    opacity: 1;
+    height: auto;
 }
