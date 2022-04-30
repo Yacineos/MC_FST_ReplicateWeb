@@ -141,6 +141,22 @@ window.onclick = function(event) {
   }
 }
 
+//hamburger navbar 
+const hamburger =document.getElementsByClassName("hamburger__button")[0];
+const navBody = document.getElementsByClassName("main-nav-elements")[0];
+const home = document.getElementById("Home");
+
+var timesClicked = 0 ;
+hamburger.onclick = function(){
+  if(timesClicked%2==0){
+  navBody.style.visibility="visible";
+  Home.classList.add="homeResp";
+  }else{
+    navBody.style.visibility="hidden";
+    Home.classList.remove="homeResp";
+  }
+  timesClicked++;
+}
 
 random("about-counters__first-h3",20);
 random("about-counters__second-h3",49);
