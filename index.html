@@ -16,7 +16,6 @@
     />
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    
   </head>
   <body>
     <nav class="main-nav">
@@ -47,7 +46,7 @@
           </ul>
         </li>
         <li class="main-nav-element"><a href="#Contact">Contact</a></li>
-        <button class="button">
+        <button id="modalOpener" class="button">
           Register in the event <i class="fa-solid fa-arrow-right"></i>
         </button>
       </ul>
@@ -63,7 +62,38 @@
           <a hsref="#location">CONFERENCE ROOM USTHB</a>
           <a href="#Details" class="button secondary">Discover More</a>
         </div>
-        <button onclick="topFunction()" id="myBtn" title="Go To top"><i id="myBtn__arrow" class="fa-solid fa-arrow-up"></i></button>
+        <button onclick="topFunction()" id="myBtn" title="Go To top">
+          <i id="myBtn__arrow" class="fa-solid fa-arrow-up"></i>
+        </button>
+        <div id="modal" class="modal">
+          <button class="modal__exit"><i class="fa-solid 
+            fa-x"></i></button>
+          <div class="modalContainer">
+            <div class="modalContainer__H1"><h3>REGISTRATIONS</h3></div>
+            <div class="modalContainer__inputs-container">
+              <div class="inputs-container__elements">
+                <div class="inptCont__elements__elem">First Name:</div>
+                <div class="inptCont__elements__elem" ><input type="text"></div>
+              </div>
+              <div class="inputs-container__elements">
+                <div class="inptCont__elements__elem">Last Name:</div>
+                <div class="inptCont__elements__elem"><input type="text"></div>
+              </div>
+              <div class="inputs-container__elements">
+                <div class="inptCont__elements__elem">E-mail:</div>
+                <div class="inptCont__elements__elem"><input type="text"></div>
+              </div>
+              <div class="inputs-container__elements">
+                <div class="inptCont__elements__elem">Phone Number:</div>
+                <div class="inptCont__elements__elem"><input type="text"></div>
+              </div>
+            </div>
+            <div class="modalContainer__completeButton">
+              <button class="modCont__compl__button button">COMPLETE THE REGISTRATION</button>
+            </div>
+          </div>
+          
+        </div>
       </section>
     </header>
     <main>
@@ -108,134 +138,141 @@
           <a href="/Speakers" class="secondary button">Veiw all speakers</a>
         </div>
         <div class="swiper one owl-carousel speakers">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide speaker">
-            <div class="speaker-visual">
-              <img class="speaker-img" src="images/xteam1.jpg" alt="" />
-              <ul class="speaker-socials">
-                <li class="speaker-social">
-                  <a href="https://www.facebook.com/Micro.Club.USTHB/"
-                    ><img src="./images/facebook-f-brands.svg"
-                  /></a>
-                </li>
-                <li class="speaker-social">
-                  <a href="https://www.instagram.com/microclub_usthb/"
-                    ><img src="./images/instagram-brands.svg"
-                  /></a>
-                </li>
-                <li class="speaker-social">
-                  <a href="https://www.linkedin.com/in/youcef-madadi-438a33170/"
-                    ><img src="./images/linkedin-in-brands.svg"
-                  /></a>
-                </li>
-              </ul>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide speaker">
+              <div class="speaker-visual">
+                <img class="speaker-img" src="images/xteam1.jpg" alt="" />
+                <ul class="speaker-socials">
+                  <li class="speaker-social">
+                    <a href="https://www.facebook.com/Micro.Club.USTHB/"
+                      ><img src="./images/facebook-f-brands.svg"
+                    /></a>
+                  </li>
+                  <li class="speaker-social">
+                    <a href="https://www.instagram.com/microclub_usthb/"
+                      ><img src="./images/instagram-brands.svg"
+                    /></a>
+                  </li>
+                  <li class="speaker-social">
+                    <a
+                      href="https://www.linkedin.com/in/youcef-madadi-438a33170/"
+                      ><img src="./images/linkedin-in-brands.svg"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+              <h6>First LastName</h6>
+              <p>Web Developer <span>@micro club</span></p>
             </div>
-            <h6>First LastName</h6>
-            <p>Web Developer <span>@micro club</span></p>
-          </div>
-          <div class="swiper-slide speaker">
-            <div class="speaker-visual">
-              <img class="speaker-img" src="images/xteam1.jpg" alt="" />
-              <ul class="speaker-socials">
-                <li class="speaker-social">
-                  <a href="https://www.facebook.com/Micro.Club.USTHB/"
-                    ><img src="./images/facebook-f-brands.svg"
-                  /></a>
-                </li>
-                <li class="speaker-social">
-                  <a href="https://www.instagram.com/microclub_usthb/"
-                    ><img src="./images/instagram-brands.svg"
-                  /></a>
-                </li>
-                <li class="speaker-social">
-                  <a href="https://www.linkedin.com/in/youcef-madadi-438a33170/"
-                    ><img src="./images/linkedin-in-brands.svg"
-                  /></a>
-                </li>
-              </ul>
+            <div class="swiper-slide speaker">
+              <div class="speaker-visual">
+                <img class="speaker-img" src="images/xteam1.jpg" alt="" />
+                <ul class="speaker-socials">
+                  <li class="speaker-social">
+                    <a href="https://www.facebook.com/Micro.Club.USTHB/"
+                      ><img src="./images/facebook-f-brands.svg"
+                    /></a>
+                  </li>
+                  <li class="speaker-social">
+                    <a href="https://www.instagram.com/microclub_usthb/"
+                      ><img src="./images/instagram-brands.svg"
+                    /></a>
+                  </li>
+                  <li class="speaker-social">
+                    <a
+                      href="https://www.linkedin.com/in/youcef-madadi-438a33170/"
+                      ><img src="./images/linkedin-in-brands.svg"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+              <h6>First LastName</h6>
+              <p>Web Developer <span>@micro club</span></p>
             </div>
-            <h6>First LastName</h6>
-            <p>Web Developer <span>@micro club</span></p>
-          </div>
-          <div class="swiper-slide speaker">
-            <div class="speaker-visual">
-              <img class="speaker-img" src="images/xteam1.jpg" alt="" />
-              <ul class="speaker-socials">
-                <li class="speaker-social">
-                  <a href="https://www.facebook.com/Micro.Club.USTHB/"
-                    ><img src="./images/facebook-f-brands.svg"
-                  /></a>
-                </li>
-                <li class="speaker-social">
-                  <a href="https://www.instagram.com/microclub_usthb/"
-                    ><img src="./images/instagram-brands.svg"
-                  /></a>
-                </li>
-                <li class="speaker-social">
-                  <a href="https://www.linkedin.com/in/youcef-madadi-438a33170/"
-                    ><img src="./images/linkedin-in-brands.svg"
-                  /></a>
-                </li>
-              </ul>
+            <div class="swiper-slide speaker">
+              <div class="speaker-visual">
+                <img class="speaker-img" src="images/xteam1.jpg" alt="" />
+                <ul class="speaker-socials">
+                  <li class="speaker-social">
+                    <a href="https://www.facebook.com/Micro.Club.USTHB/"
+                      ><img src="./images/facebook-f-brands.svg"
+                    /></a>
+                  </li>
+                  <li class="speaker-social">
+                    <a href="https://www.instagram.com/microclub_usthb/"
+                      ><img src="./images/instagram-brands.svg"
+                    /></a>
+                  </li>
+                  <li class="speaker-social">
+                    <a
+                      href="https://www.linkedin.com/in/youcef-madadi-438a33170/"
+                      ><img src="./images/linkedin-in-brands.svg"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+              <h6>First LastName</h6>
+              <p>Web Developer <span>@micro club</span></p>
             </div>
-            <h6>First LastName</h6>
-            <p>Web Developer <span>@micro club</span></p>
-          </div>
-          <div class="swiper-slide speaker">
-            <div class="speaker-visual">
-              <img class="speaker-img" src="images/xteam1.jpg" alt="" />
-              <ul class="speaker-socials">
-                <li class="speaker-social">
-                  <a href="https://www.facebook.com/Micro.Club.USTHB/"
-                    ><img src="./images/facebook-f-brands.svg"
-                  /></a>
-                </li>
-                <li class="speaker-social">
-                  <a href="https://www.instagram.com/microclub_usthb/"
-                    ><img src="./images/instagram-brands.svg"
-                  /></a>
-                </li>
-                <li class="speaker-social">
-                  <a href="https://www.linkedin.com/in/youcef-madadi-438a33170/"
-                    ><img src="./images/linkedin-in-brands.svg"
-                  /></a>
-                </li>
-              </ul>
+            <div class="swiper-slide speaker">
+              <div class="speaker-visual">
+                <img class="speaker-img" src="images/xteam1.jpg" alt="" />
+                <ul class="speaker-socials">
+                  <li class="speaker-social">
+                    <a href="https://www.facebook.com/Micro.Club.USTHB/"
+                      ><img src="./images/facebook-f-brands.svg"
+                    /></a>
+                  </li>
+                  <li class="speaker-social">
+                    <a href="https://www.instagram.com/microclub_usthb/"
+                      ><img src="./images/instagram-brands.svg"
+                    /></a>
+                  </li>
+                  <li class="speaker-social">
+                    <a
+                      href="https://www.linkedin.com/in/youcef-madadi-438a33170/"
+                      ><img src="./images/linkedin-in-brands.svg"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+              <h6>First LastName</h6>
+              <p>Web Developer <span>@micro club</span></p>
             </div>
-            <h6>First LastName</h6>
-            <p>Web Developer <span>@micro club</span></p>
-          </div>
-          <div class="swiper-slide speaker">
-            <div class="speaker-visual">
-              <img class="speaker-img" src="images/xteam1.jpg" alt="" />
-              <ul class="speaker-socials">
-                <li class="speaker-social">
-                  <a href="https://www.facebook.com/Micro.Club.USTHB/"
-                    ><img src="./images/facebook-f-brands.svg"
-                  /></a>
-                </li>
-                <li class="speaker-social">
-                  <a href="https://www.instagram.com/microclub_usthb/"
-                    ><img src="./images/instagram-brands.svg"
-                  /></a>
-                </li>
-                <li class="speaker-social">
-                  <a href="https://www.linkedin.com/in/youcef-madadi-438a33170/"
-                    ><img src="./images/linkedin-in-brands.svg"
-                  /></a>
-                </li>
-              </ul>
+            <div class="swiper-slide speaker">
+              <div class="speaker-visual">
+                <img class="speaker-img" src="images/xteam1.jpg" alt="" />
+                <ul class="speaker-socials">
+                  <li class="speaker-social">
+                    <a href="https://www.facebook.com/Micro.Club.USTHB/"
+                      ><img src="./images/facebook-f-brands.svg"
+                    /></a>
+                  </li>
+                  <li class="speaker-social">
+                    <a href="https://www.instagram.com/microclub_usthb/"
+                      ><img src="./images/instagram-brands.svg"
+                    /></a>
+                  </li>
+                  <li class="speaker-social">
+                    <a
+                      href="https://www.linkedin.com/in/youcef-madadi-438a33170/"
+                      ><img src="./images/linkedin-in-brands.svg"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+              <h6>First LastName</h6>
+              <p>Web Developer <span>@micro club</span></p>
             </div>
-            <h6>First LastName</h6>
-            <p>Web Developer <span>@micro club</span></p>
           </div>
-        </div>
-        <div class="swiper-button-next" style="font-weight: 800;
-        font-size: larger;
-        color: grey;"></div>
-      <div class="swiper-button-prev" style="font-weight: 800;
-      font-size: larger;
-      color: grey;"></div>
+          <div
+            class="swiper-button-next"
+            style="font-weight: 800; font-size: larger; color: grey"
+          ></div>
+          <div
+            class="swiper-button-prev"
+            style="font-weight: 800; font-size: larger; color: grey"
+          ></div>
         </div>
       </section>
       <section id="Details">
@@ -418,13 +455,13 @@
       <section id="Sponsors">
         <h2>Sponsors</h2>
         <div class="swiper mySwiper">
-         <div class="swiper-wrapper">
-          <img class="swiper-slide" src="images/brand2.png" alt="" />
-          <img class="swiper-slide" src="images/brand2.png" alt="" />
-          <img class="swiper-slide" src="images/brand2.png" alt="" />
-          <img class="swiper-slide" src="images/brand2.png" alt="" />
-          <img class="swiper-slide" src="images/brand2.png" alt="" />
-         </div>
+          <div class="swiper-wrapper">
+            <img class="swiper-slide" src="images/brand2.png" alt="" />
+            <img class="swiper-slide" src="images/brand2.png" alt="" />
+            <img class="swiper-slide" src="images/brand2.png" alt="" />
+            <img class="swiper-slide" src="images/brand2.png" alt="" />
+            <img class="swiper-slide" src="images/brand2.png" alt="" />
+          </div>
         </div>
       </section>
       <section id="Contact">
