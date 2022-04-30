@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper.one', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -10,6 +10,22 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-prev',
     },
   });
+
+  var swiper2 = new Swiper(".mySwiper", {
+    slidesPerView: 5,
+    direction:'horizontal',
+    spaceBetween: 30,
+    autoplay: {
+        delay: 2000,
+      },
+    loop:true,
+    grabCursor: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
 
 function random (id,max){
     var cpt = 0 ;
