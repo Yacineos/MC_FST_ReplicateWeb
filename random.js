@@ -1,3 +1,4 @@
+//first swiper
 const swiper = new Swiper('.swiper.one', {
     // Optional parameters
     direction: 'horizontal',
@@ -10,7 +11,7 @@ const swiper = new Swiper('.swiper.one', {
       prevEl: '.swiper-button-prev',
     },
   });
-
+//second swiper
   var swiper2 = new Swiper(".mySwiper", {
     slidesPerView: 5,
     direction:'horizontal',
@@ -26,7 +27,7 @@ const swiper = new Swiper('.swiper.one', {
     },
   });
 
-
+// numbers generating effect
 function random (id,max){
     var cpt = 0 ;
     var speed = 0.5
@@ -47,7 +48,7 @@ function random (id,max){
     } ,50) ;
     
 }
-
+//navigation in the schedule tables
 function navTable1(){
     const elem1 =document.querySelector(".schedule-nav__a1").style;
     const elem2 =document.querySelector(".schedule-nav__a2").style;
@@ -88,8 +89,26 @@ function navTable3(){
     elem3.color="#ffbd00";
    
 }
+//Get the button
+var mybutton = document.getElementById("myBtn");
 
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
 random("about-counters__first-h3",20);
-random("about-counters__second-h3",80);
-random("about-counters__third-h3",199);
+random("about-counters__second-h3",49);
+random("about-counters__third-h3",98);

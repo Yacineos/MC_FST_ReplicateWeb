@@ -139,7 +139,24 @@ body {
 .hover-element {
     display: flex;
 }
-
+/*------------ Go to Top Button------------ */
+#myBtn{
+    position: fixed;
+    width: 2.5em;
+    height: 2.5em;
+    bottom: 10%;
+    right: 3%;
+    background-color: #ffbd00;
+    border-color: transparent;
+    border-radius: 50%;
+}
+#myBtn:hover{
+    cursor: pointer;
+}
+#myBtn__arrow{
+    color: #fff;
+}
+/*------------------------ */
 section {
     display: flex;
     flex-direction: column;
@@ -502,3 +519,23 @@ color: #fff;
 .contact-parts:last-child .button{
     width: 100%;
 }
+/* -------------ScrollBar----------*/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--scheduleBackground);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
