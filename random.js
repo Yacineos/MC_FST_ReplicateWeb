@@ -117,7 +117,7 @@ var modal = document.getElementById("modal");
 var btn = document.getElementById("modalOpener");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("modal__exit");
+var span = document.getElementsByClassName("modal__exit")[0];
 
 var back = document.getElementsByTagName("main")[0];
 
@@ -131,6 +131,7 @@ btn.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
+  back.style.opacity="1";
 }
 
 // When the user clicks anywhere outside of the modal, close it

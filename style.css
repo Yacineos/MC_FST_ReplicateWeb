@@ -594,8 +594,13 @@ color: #fff;
     width: 100%;
     padding: 3em;
 }
-.modCont__compl__button{
-   
+.modal__exit:hover{
+    cursor: pointer;
+
 }
 
+/*---------Responsivness-------*/
+@media only screen and (max-width: 1122px ){
+    
+}
 
