@@ -626,7 +626,12 @@ color: #fff;
 
 
 /*---------Responsivness-------*/
-@media only screen and (max-width: 1122px ){
+@media only screen and (max-width: 500px ){
+    #About{
+        flex-direction: column!important;
+    }
+}
+@media only screen and (max-width: 1142px ){
     .main-nav-elements{
       visibility:hidden ;
       flex-direction: column;
@@ -654,9 +659,16 @@ color: #fff;
         margin: 1.5rem;
     }
 }
+@media only screen and (min-width: 1142px ){
+    .main-nav-elements{
+        visibility: visible;
+    }
+}
 
 .homeResp{
     background-image: none!important;
     background-color: var(--background)!important;
 }
+
+
 

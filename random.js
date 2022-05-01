@@ -39,7 +39,6 @@ function random (id,max){
             speed+=0.05;
             cpt+=speed;
             document.getElementById(id).innerHTML = Math.floor(cpt);
-            console.log(cpt);
         }
         else{
             clearInterval(timer);
@@ -141,13 +140,16 @@ window.onclick = function(event) {
   }
 }
 
+
 //hamburger navbar 
+
 const hamburger =document.getElementsByClassName("hamburger__button")[0];
 const navBody = document.getElementsByClassName("main-nav-elements")[0];
 const home = document.getElementById("Home");
 
 var timesClicked = 0 ;
 hamburger.onclick = function(){
+  if(screen.availWidth<= 1142){
   if(timesClicked%2==0){
   navBody.style.visibility="visible";
   Home.classList.add="homeResp";
@@ -157,6 +159,8 @@ hamburger.onclick = function(){
   }
   timesClicked++;
 }
+}
+
 
 random("about-counters__first-h3",20);
 random("about-counters__second-h3",49);
